@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    background-color: #1f1b1c;
+}
+
+
+/*Inicio 
+Navegador */
+nav {
+    width: 100%;
+    height: 3.125rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 3.125rem;
+    background-color: #db1013;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1.2rem;
+}
+
+.eminem-logo {
+    color: #f2f2f2;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.875rem;
+}
+
+#btn-menu {
+    display: none;
+}
+
+/* Icono menu */
+.show-icon-menu {
+    display: block;
+    width: 22px;
+    height: 20px;
+}
+
+.show-icon-menu i {
+    color: #f2f2f2;
+    font-size: 1.375rem;
+}
+
+/* Close Icon Menu*/
+.hide-icon-menu {
+    display: none;
+    width: 17px;
+    height: 24px;
+    z-index: 1000;
+}
+
+.hide-icon-menu i {
+    color: #f2f2f2;
+    font-size: 1.5rem;
+}
+
+#btn-menu:checked ~ .hide-icon-menu{
+    display: block;
+}
+
+#btn-menu:checked ~ .show-icon-menu{
+    display: none;
+}
+
+/*Menu */
+.menu-container {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: #0f0f11;
+    padding-top: 10rem;
+    margin-left: -1rem;
+    transition: 1s;
+}
+
+.menu-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container li a {
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    color: #98989d ;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.menu-container ul:last-child {
+    margin-left: 0;
+}
+
+.menu-container li a:hover {
+    transform: scale(1.2);
+    color: #db1013;
+    cursor: pointer;
+    transition: 0.10s;
+}
+
+
+/* Cuando toquemos el boton aparecen los links */
+#btn-menu:checked ~ .menu-container{
+    display: block;
+    animation: come-in 0.5s ease forwards;
+}
+
+@keyframes come-in {
+    from {
+        transform: translateX(-90%);
+        opacity: 0;
+        
+    }
+    to {
+        transform: translateX(0);
+        opacity: 0.8;
+        
+    }
+}
+/* Fin de 
+NAVEGADOR */
+
+
+/* Inicio de
+HEADER*/
+header {
+    box-sizing: border-box;
+}
+
+.quote-portada {
+    box-sizing: border-box;
+    z-index: 10;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 90vw;
+    padding-right: 10px;
+    color: #f2f2f2;
+    font-family: 'Oswald',sans-serif;
+    font-weight: bolder;
+    font-size: 12.5vw;
+    text-align: right;
+    opacity: 0.5;
+    margin-bottom: 15vw;
+}
+
+.portada-mobile {
+    width: 100%;
+    position: absolute;
+    top: 3.125rem;
+    z-index: -1;
+}
+
+.portada-desktop {
+    display: none;
+}
+/* Fin de
+HEADER */
+
+
+/* Inicio de
+SECTION HISTORIA */
+.historia {
+    padding-top: 3.125rem;
+    padding-bottom: 4rem;
+}
+
+.titulo-section {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-family: 'Oswald', sans-serif;
+    color: #f2f2f2;
+    background-color: #db1013;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.container-foto-text {
+    background-color: #2e2a2b;
+    box-sizing: border-box;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding-bottom: 1rem;
+}
+
+.container-foto-text .eminem-mobile-bio-foto {
+    margin-bottom: 1rem;
+}
+
+.eminem-mobile-bio-foto {
+    width: 100%;
+}
+
+.eminem-desktop-bio-foto {
+    display: none;
+}
+
+.container-foto-text p {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #adaeae;
+}
+/* Fin de
+SECTION HISTORIA */
+
+
+/* Inicio de
+SECTION DISCOGRAFIA */
+.discografia {
+    padding-top: 3.125rem;
+    padding-bottom: 4rem;
+}
+
+.discografia p {
+    font-family: 'Roboto Condensed',sans-serif;
+    color: #db1013;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.discography-container img {
+    display: block;
+    width: 90%;
+}
+
+.discography-container .disco {
+    display: flex;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    background-color: #2e2a2b;
+}
+
+.discography-container .disco h3 {
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 1.5rem;
+    color: #adaeae;
+}
+
+.discography-container .disco iframe {
+    height: 380px;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 0;
+    display: none;
+}
+
+
+/* Fin de
+SECTION DISCOGRAFIA */
+
+
+/* Inicio de
+SECTION POPULARES */
+.populares {
+    padding-top: 3.125rem;
+    padding-bottom: 4rem;
+    box-sizing: border-box;
+}
+
+.canciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canciones li {
+    width: 90%;
+    margin-top: 1rem;
+}
+
+
+.canciones iframe {
+    width: 100%;
+    height: 80px;
+    border: 0;
+    background-color: transparent;
+}
+
+
+
+
+/* Fin de
+SECTION POPULARES */
+
+
+/* Inicio de
+SECTION VIDEOS*/
+.videos {
+    padding-top: 3.125rem;
+    padding-bottom: 4rem;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.video-container iframe {
+    width: 90%;
+    height: 49vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+}
+
+/* Fin de 
+SECTION VIDEOS */
+
+
+/* Inicio de
+FOOTER */
+
+.footer {
+    background-color: #db1013;
+    color: #f2f2f2;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.rrss-container {
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rrss-container a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 2rem;
+}
+
+/* Fin de
+FOOTER */
+
+
+
+
+/* Media Queries*/
+@media all and (min-width:768px) {
+    
+    /* NAVEGADOR */
+    nav {
+        height: 3.75rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-container {
+        height: 3.75rem;
+        padding-left: 6.9%;
+        padding-right: 6.9%;
+    }
+
+    .show-icon-menu {
+        display: none;
+    }
+
+    .menu-container {
+        display: block;
+        position: static;
+        box-sizing: border-box;
+        background-color: transparent;
+        height: auto;
+        padding-top: 0;
+        padding-left: 0;
+        margin-left: 0;
+        width: fit-content;
+    }
+
+    .menu-container ul {
+        flex-direction: row;
+    }
+
+    .menu-container ul a {
+        color: #f2f2f2;
+        margin-left: 2.5rem;
+        margin-bottom: 0;
+        font-size: 0.8rem;
+    }
+
+    .menu-container ul a:hover {
+        background-color: #050404;
+        color: #f2f2f2;
+    }
+
+    /* HEADER */
+
+    .portada-mobile {
+        display: none;
+    }
+
+    .portada-desktop {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 3.75rem;
+        z-index: -1;
+    }
+
+    .quote-portada {
+        font-size: 4rem;
+        padding-top: 5rem;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+
+
+}

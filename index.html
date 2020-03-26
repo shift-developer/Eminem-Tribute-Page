@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Shift">
+    <meta name="description" content="Ejercicio acamica">
+    <title>Tributo a EMINEM</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <!-- LINKS TO EXTERNAL FILES -->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+
+     <!-- FONTS IMPORTS -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navegador">
+        <div class="nav-container">
+            <div class="logo">
+                <h1 class="eminem-logo">EMINƎM</h1>
+            </div>
+
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu" class="show-icon-menu">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <label for="btn-menu" class="hide-icon-menu">
+                <i class="fas fa-times"></i>
+            </label>
+
+            <div class="menu-container">
+                <ul>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#discografia">Discografía</a></li>
+                    <li><a href="#populares">+Populares</a></li>
+                    <li><a href="#video">Videos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header>
+        <h2 class="quote-portada">
+            YOU DON'T GET ANOTHER CHANCE. 
+            LIFE IS NO NINTENDO GAME
+        </h2>
+        <img class="portada-mobile" src="images/eminem-portada-mobile.jpg" alt="Eminem foto">
+        <img class="portada-desktop" src="images/eminem-portada-desktop.jpg" alt="Eminem foto">
+    </header>
+
+    <section class="historia" id="historia">
+        <h3 class="titulo-section">HISTORIA</h3>
+        <div class="container-foto-text">
+            <img class="eminem-mobile-bio-foto" src="images/eminem-bio-mobile.jpg" alt="eminem bio foto">
+            <img class="eminem-desktop-bio-foto" src="images/eminem-bio-desktop.jpg" alt="eminem bio foto">
+            <div class="biografia-text-container">
+            <p>
+                Marshall Bruce Mathers III conocido por su nombre artístico Eminem (estilizado como EMINƎM)
+                y también por su álter ego Slim Shady, es un rapero, productor discográfico y actor estadounidense. 
+                Su nombre artístico proviene de la unión de las iniciales de Marshall Mathers: 
+                M&M («Em and Em», estilizándose como Eminem), 
+                mientras que el apodo de su álter ego (llevado al español como Sombra Misteriosa o el Flaco Sombrío) 
+                se hizo conocer por primera vez en 1997 con su primer EP titulado The Slim Shady EP.
+            <br><br>
+                Eminem ha vendido más de 200 millones de álbumes en todo el mundo, 
+                convirtiéndose en uno de los raperos con más ventas de la historia​ y el artista con mayor 
+                venta de discos en la década del 2000.​ Además, ocupó el puesto número 82 en la lista de 
+                Los 100 mejores artistas de todos los tiempos, según la revista Rolling Stone, 
+                y posicionándose como el 2do mejor rapero solista, después de Dr. Dre, y el 5to mejor rapero 
+                (incluyendo grupos), después de los Beastie boys, Dr. Dre, Run-D.M.C. y Public Enemy.
+            <br><br>
+                Según la revista Billboard, Eminem tiene dos de sus álbumes entre los 5 más vendidos de la década. 
+                Su estilo de rapeo se caracteriza por ser múltiple, ha incursionado en muchas ramas del hip hop, 
+                destacándose el horrorcore, rap rock, gangsta rap (con su banda paralela, D12), comedy hip hop, 
+                hardcore rap, rapcore, conscious hip hop y rap alternativo.
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="discografia" id="discografia">
+        <h3 class="titulo-section">DISCOGRAFÍA</h3>
+        <p>(Presiona la imagen del disco para escuchar el álbum)</p>
+        <div class="discography-container">
+            <div class="disco">
+                <h3>Infinite (1996)</h3>
+                <img id="album-1" onclick="showFrame(this)" src="./images/infinite-disco.jpg"
+                    alt="Infinite disco 1996">
+                <iframe id="album-1-frame" src="https://open.spotify.com/embed/album/0FQ1ab1KzaOpZWZBFNNpzP" allow="encrypted-media"></iframe>
+            </div>
+            <div class="disco">
+                <h3>The Slim Shady LP(1999)</h3>
+                <img id="album-2" onclick="showFrame(this)" 
+                    src="./images/slimshady-disco.jpg" alt="The Slim Shady LP(1999)">
+                <iframe id="album-2-frame" src="https://open.spotify.com/embed/album/0vE6mttRTBXRe9rKghyr1l" allow="encrypted-media"></iframe>
+            </div>
+            <div class="disco">
+                <h3>The Marshall Mathers LP(2001)</h3>
+                <img id="album-0" onclick="showFrame(this)"
+                    src="./images/marshall-disco.jpg" alt="The Marshall Mathers LP">
+                <iframe id="album-0-frame" src="https://open.spotify.com/embed/album/5H0rjI1TW8F2tORPYMJXHJ" allow="encrypted-media"></iframe>
+            </div>
+            <div class="disco">
+                <h3>The Eminem Show (2002)</h3>
+                <img id="album-3" onclick="showFrame(this)"
+                    src="./images/emshow-disco.jpg" alt="The Eminem Show">
+                <iframe id="album-3-frame" src="https://open.spotify.com/embed/album/2cWBwpqMsDJC1ZUwz813lo" allow="encrypted-media"></iframe>
+            </div>
+            <div class="disco">
+                <h3>«Lose Yourself» sencillo (2002)</h3>
+                <img id="album-4" onclick="showFrame(this)"
+                    src="./images/loseyourself-sencillo.jpg"
+                    alt="«Lose Yourself» sencillo">
+                <iframe id="album-4-frame" src="https://open.spotify.com/embed/track/3u0W3gJQNV5gegMmntzby8" allow="encrypted-media"></iframe>
+            </div>
+            <div class="disco">
+                <h3>Encore (2004)</h3>
+                <img id="album-5" onclick="showFrame(this)"
+                    src="./images/encore-disco.jpg" alt="Encore">
+                <iframe id="album-5-frame" src="https://open.spotify.com/embed/album/1kTlYbs28MXw7hwO0NLYif" allow="encrypted-media"></iframe>
+            </div>
+            <div class="disco">
+                <h3>Eminem Presents: The Re-Up (2006)</h3>
+                <img id="album-6" onclick="showFrame(this)"
+                    src="./images/reup-disco.jpg" alt="Eminem Presents: The Re-Up">
+                <iframe id="album-6-frame" src="https://open.spotify.com/embed/album/03lYYd9IOnxoacrLOvoPJa" allow="encrypted-media"></iframe>
+            </div>
+            <div class="disco">
+                <h3>Relapse (2009)</h3>
+                <img id="album-7" onclick="showFrame(this)"
+                    src="./images/relapse-sencillo.jpg" alt="Relapse">
+                <iframe id="album-7-frame" src="https://open.spotify.com/embed/album/7MZzYkbHL9Tk3O6WeD4Z0Z" allow="encrypted-media"></iframe>
+            </div>
+            <div class="disco">
+                <h3>Recovery (2010)</h3>
+                <img id="album-8" onclick="showFrame(this)"
+                    src="./images/recovery-disco.jpg" alt="Recovery">
+                <iframe id="album-8-frame" src="https://open.spotify.com/embed/album/47BiFcV59TQi2s9SkBo2pb" allow="encrypted-media"></iframe>
+            </div>
+            <div class="disco">
+                <h3>The Marshall Mathers LP 2 (2013)</h3>
+                <img id="album-9" onclick="showFrame(this)"
+                    src="./images/marshall2-disco.jpg" alt="The Marshall Mathers LP 2">
+                <iframe id="album-9-frame" src="https://open.spotify.com/embed/album/6DN7GcZF1HywzrkGN6Eeqk"  allow="encrypted-media"></iframe>
+            </div>
+            <div class="disco">
+                <h3>Shady XV (2014)</h3>
+                <img id="album-10" onclick="showFrame(this)"
+                    src="./images/shady-disco.jpg" alt="Shady XV">
+                <iframe id="album-10-frame" src="https://open.spotify.com/embed/album/3CjuTytLZz3G9znXt2rJgU"  allow="encrypted-media"></iframe>
+            </div>
+            <div class="disco">
+                <h3>Revival (2017)</h3>
+                <img id="album-11" onclick="showFrame(this)"
+                    src="./images/revival-disco.jpg" alt="Revival">
+                <iframe id="album-11-frame" src="https://open.spotify.com/embed/album/0U6ldwLBEMkwgfQRY4V6D2"  allow="encrypted-media"></iframe>
+            </div>
+            <div class="disco">
+                <h3>Kamikaze (2018)</h3>
+                <img id="album-12" onclick="showFrame(this)"
+                    src="./images/kamikaze-disco.jpg" alt="Kamikaze">
+                <iframe id="album-12-frame" src="https://open.spotify.com/embed/album/3HNnxK7NgLXbDoxRZxNWiR"  allow="encrypted-media"></iframe>
+            </div>
+            <div class="disco">
+                <h3>Music to be Murdered By (2020)</h3>
+                <img id="album-13" onclick="showFrame(this)"
+                    src="./images/musicby-disco.jpg" alt="Music to be Murdered By">
+                <iframe id="album-13-frame" src="https://open.spotify.com/embed/album/4otkd9As6YaxxEkIjXPiZ6"  allow="encrypted-media"></iframe>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="populares" id="populares">
+        <h3 class="titulo-section">+POPULARES</h3>
+        <ol class="canciones">
+            <li><iframe src="https://open.spotify.com/embed/track/7FIWs0pqAYbP91WWM0vlTQ" allow="encrypted-media"></iframe></li>
+            <li><iframe src="https://open.spotify.com/embed/track/4xkOaSrkexMciUUogZKVTS" allow="encrypted-media"></iframe></li>
+            <li><iframe src="https://open.spotify.com/embed/track/7lQ8MOhq6IN2w8EYcFNSUk" allow="encrypted-media"></iframe></li>
+            <li><iframe src="https://open.spotify.com/embed/track/0VSzREd1OjEWJ9tXoFHRQH" allow="encrypted-media"></iframe></li>
+            <li><iframe src="https://open.spotify.com/embed/track/15JINEqzVMv3SvJTAXAKED" allow="encrypted-media"></iframe></li>
+        </ol>
+
+    </section>
+
+    <section class="videos" id="video">
+        <h3 class="titulo-section">VIDEOS</h3>
+        <div class="video-container">
+            <iframe src="https://www.youtube-nocookie.com/embed/FBRIyqIpv8g" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/q3P6ksnVzTA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/TyDMo8kbdXs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/XbGs_qK2PQA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>   
+    </section>
+
+    <footer class="footer">
+        <p>
+        Designed by Juan Shift
+        </p>
+            <div class="rrss-container">
+                <a href="mailto:juancruz.gonfer@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/juan-cruz-gonzalez-41b09193/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/shift-developer" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>    
+    </footer>
+
+    <script type="text/javascript" src="./main.js"></script>
+
+</body>
+</html>
